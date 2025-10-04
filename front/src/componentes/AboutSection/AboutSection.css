@@ -1,0 +1,242 @@
+.about-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.about-content {
+  margin: 50px auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.about-mission,
+.about-vision,
+.about-values {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.about-mission:hover,
+.about-vision:hover,
+.about-values:hover {
+  transform: translateY(-8px);
+}
+
+.about-mission h3,
+.about-vision h3,
+.about-values h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.about-values ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-values li {
+  padding: 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-values li strong {
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+.about-team {
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+.about-team h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.team-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.team-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.3);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  font-weight: 500;
+}
+
+.why-choose-us {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-choose-us h2 {
+  font-size: 2.2rem;
+  color: #4fc3c3;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.why-content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-image {
+  position: relative;
+}
+
+.why-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 8px solid #4fc3c3;
+}
+
+.why-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-text p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0;
+}
+
+.btn-agenda {
+  background-color: #4fc3c3;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  box-shadow: 0 4px 15px rgba(79, 195, 195, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-agenda:hover {
+  background-color: #3da8a8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 195, 195, 0.4);
+}
+
+@media (max-width: 968px) {
+  .why-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-image img {
+    height: 350px;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .why-image img {
+    height: 300px;
+    max-width: 300px;
+  }
+
+  .btn-agenda {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
